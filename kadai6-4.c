@@ -15,6 +15,13 @@ int str_equalnum(const char *str1, const char *str2)
     return n;
 }
 
+unsigned str_length(const char str[])
+{
+	int i = 0;
+    while(str[i]){ i++; }
+    	return i;
+}
+
 int main(void)
 {
 	char str1[16], str2[16];
@@ -22,9 +29,13 @@ int main(void)
 	
 	printf("文字列1を入力してください：");
 	scanf("%s", str1);
+
+    printf("文字列1の長さ:%d\n", str_length(str1))
 	
 	printf("文字列2を入力してください：");
 	scanf("%s", str2);
+    
+    printf("文字列2の長さ:%d\n", str_length(str2))
 	
 	number = str_equalnum(str1, str2);
 
