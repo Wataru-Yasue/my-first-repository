@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /* 二つの文字列が何文字一致しているかカウント */
-int str_equalnum(const char *s1, const char *s2)
+int str_equalnum(const char *str1, const char *str2)
 {
     int i = 0;
     int n = 0;
-	while(s1[i]){
-        while(s2[i]){
-            if(s1[i] == s2[i]){ n++; }
+	while(str1[i]){
+        while(str2[i]){
+            if(str1[i] == str2[i]){ n++; }
             i++;
         }
         i++;
